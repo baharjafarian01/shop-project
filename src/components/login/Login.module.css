@@ -1,0 +1,119 @@
+.container {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer {
+  margin-top: 100px;
+  background-color: #fff;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid silver;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #1a73e8;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+}
+
+.formField label {
+  margin-bottom: 10px;
+  color: rgb(85, 85, 85);
+  font-size: 0.9rem;
+}
+
+.formInput {
+  border: 1px solid silver;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 20px;
+  transition: all 0.2s ease-in;
+}
+
+.uncompleted {
+  border: 1px solid red;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 20px;
+  transition: all 0.2s ease-in;
+}
+
+.formInput:focus,
+.uncompleted:focus {
+  outline: none;
+  border: 1px solid #1a73e8;
+  line-height: 30px;
+}
+
+.formField span {
+  color: red;
+  font-size: 0.7rem;
+  margin: 5px;
+  background-color: rgba(255, 0, 0, 0.175);
+  padding: 2px 3px;
+  width: fit-content;
+  border-radius: 3px;
+}
+
+.formButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.formButton a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 700;
+  transition: all 0.1s ease-in;
+}
+
+.formButton a:hover {
+  color: #004aaa;
+}
+
+.formButton button {
+  border: none;
+  background-color: #1a73e8;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.1s ease-in;
+}
+
+.formButton button:hover {
+  background-color: #004aaa;
+}
+
+@media (max-width: 440px) {
+  .formContainer {
+    width: 90%;
+  }
+
+  .formInput {
+    width: 90%;
+  }
+
+  .uncompleted {
+    width: 90%;
+  }
+}
